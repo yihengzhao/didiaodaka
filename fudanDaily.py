@@ -91,7 +91,7 @@ def notify(_status, _message):
     else:
         _d["text"] = "打卡失败，请手动打卡"
 
-    requests.post(f"https://sc.ftqq.com/{PUSH_KEY}.send", data=_d)
+    requests.post(f"https://sctapi.ftqq.com/{PUSH_KEY}.send", data=_d)
 
 
 if __name__ == "__main__":
